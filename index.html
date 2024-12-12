@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+   <nav id="desktop-nav">  <!--Menu para telas maiores que 1200px de largura-->
+        <div class="logo">Victor Pereira</div>
+            <div class="">
+                <ul class="nav-links">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+    </nav>
+    <nav id="hamburger-nav"> <!--Menu para telas menores que 1200px de largura-->
+        <div class="logo">Victor Pereira</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()"> <!--onclick="toggleMenu()" é a função javascript para o menu hamburger-->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#experiencia" onclick="toggleMenu()">Experiência</a></li>
+                <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#contato" onclick="toggleMenu()">Contato</a></li> 
+            </div>
+        </div>
+    </nav>
+    <script src="script.js"></script>
+</body>
+</html>

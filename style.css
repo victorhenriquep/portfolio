@@ -1,0 +1,82 @@
+/* GERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');   /*Importação da fonte Poppins do GoogleFonts*/
+
+* {       /*Zerando as formatações de toda a página*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif; /*Setando a fonte de todo o corpo da página para Poppins*/
+}
+
+html {
+    scroll-behavior: smooth;   /*Estilização do comportamento do scroll*/
+}
+
+p {
+    color: rgb(85, 85, 85);   /*Cor dos elementos p (acinzentado)*/
+}
+
+/* TRANSIÇÃO */
+a, .btn {
+    transition: all 300ms ease;    /*Estilização das transições de botões e links*/
+}
+
+/* DESKTOP NAV */
+nav, .nav-links {       
+    display: flex;    /*Display flex do menu e dos links do menu*/
+}
+
+nav {
+    justify-content: space-around;  /*Espaçamento entre os elementos*/
+    align-items: center;  /*Alinhamento dos elementos ao centro*/
+    height: 17vh;   /*Altura proporcional que ocupa todo o cabeçalho*/
+}
+
+.nav-links {
+    gap: 2rem;   /*Espaço entre os links*/
+    list-style: none;  /*Removendo estilo dos links do menu*/
+    font-size: 1.5rem;  /*Setando tamanho da fonte dos links do menu*/
+}
+
+a {
+    color: black;   /*Cor dos links preta*/
+    text-decoration: none;  /*Removendo decoração dos links*/
+    text-decoration-color: white;
+}
+
+a:hover { /*Estilo dos links ao passar o mouse*/
+    color: gray;   
+    text-decoration: underline;
+    text-underline-offset: 0.8rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo { /*Estilo da logo "Victor Pereira"*/
+    font-size: 2rem;
+}
+
+.logo:hover { /*Setando o mouse ao passar em cima da logo como default*/
+    cursor: default;
+}
+
+/*HAMBURGER MENU */
+#hamburger-nav {
+    display: none;   /*Cabeçalho hamburger desaparece*/
+}
+
+.hamburger-menu {   /*Estilo do menu hamburger*/
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {  /*Estilo do ícone do menu hamburger*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}

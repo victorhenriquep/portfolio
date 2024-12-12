@@ -1,0 +1,8 @@
+@media screen and (max-width: 1200px) {   /*Em telas menores de 1200px de largura*/
+    #desktop-nav {   
+        display: none;   /*O menu normal some*/
+    }
+    #hamburger-nav {
+        display: flex;  /*O menu hamburger aparece*/
+    }
+}
